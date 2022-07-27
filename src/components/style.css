@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:ital,wght@0,400;0,500;1,700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-family: "Ubuntu", sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+p {
+  font-size: 1.6rem;
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+.app {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+}
+
+.app::before {
+  content: "";
+  background: url("https://i.pinimg.com/originals/7c/eb/e7/7cebe76ce9f7469b42200828b66a5aed.jpg")
+    no-repeat center center/cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.app .search {
+  text-align: center;
+  padding: 2rem;
+  margin-right: 42vw;
+}
+
+.app input {
+  padding: 0.7rem 1.5rem;
+  font-size: 1.2rem;
+  border-radius: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.1);
+  color: #f8f8f8;
+  margin-left: 20vw;
+}
+
+::placeholder {
+  color: #f8f8f8;
+}
+
+.container {
+  max-width: 600px;
+  height: 700px;
+  margin: auto 6rem;
+  padding: 0 1rem;
+  position: relative;
+  top: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.app .top {
+  width: 100%;
+  margin: 1rem auto;
+}
+
+.app .description {
+  position: relative;
+  font-size: 4rem !important;
+  right: -85%;
+  transform-origin: 0 0;
+  transform: rotate(269deg);
+}
+
+.app .bottom {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  width: 90%;
+  margin: 1rem 0rem 17rem;
+  padding: 1rem;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.bold {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+.reachart {
+  width: 30%;
+  height: 100vh;
+  position: absolute;
+  z-index: 4;
+}
+
+@media (max-width: 450px) {
+  .bold {
+    font-size: 0.9rem;
+  }
+  .app input {
+    margin-left: 3vw;
+  }
+  .temp h1 {
+    font-size: 6rem;
+  }
+  .description {
+    margin-left: 10vw;
+  }
+  .app .bottom {
+    width: 70vw;
+    position: absolute;
+    z-index: 1000;
+    top: 50vh;
+    right: -15vw;
+  }
+}
+@media (max-width: 1400px) {
+  .app input {
+    margin-right: 60vw;
+  }
+}

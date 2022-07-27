@@ -1,2 +1,2 @@
-# weather-apps-react
+# react-weather-apps
 Created with CodeSandbox
